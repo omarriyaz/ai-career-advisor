@@ -32,13 +32,13 @@ def parse_with_ollama(dom_chunks, parse_description):
 
     return "\n".join(parsed_results)
 
-def generate_roadmap(transcripts):
+def generate_ideas(transcripts):
     # Define the description to parse from transcripts
     parse_description = (
-        "Summarize a comprehensive roadmap for someone looking to enter the specified field. "
-        "The roadmap should be a numbered list of the steps taken to break into the field."
-        "Include key skills, resources to learn those skills, and projects that are essential for entering the field."
-        "Generate Additional Project Ideas from the Project Ideas that are specified in the information given"
+        "List all the project ideas as summaries mentioned in the video. The list should be numbered"
+        "For each project in the list, include a description of the project, the technologies used, the expected outcome, and suggest variations they can make to the project."
+        "The Structure for each Project should be: Project Name, Description, Technologies, Expected Outcome, Variations"
+        "These variations would keep the basic idea of the project but change a variable to produce a unique project idea."
     )
 
     # Parse each transcript chunk using the LLM
