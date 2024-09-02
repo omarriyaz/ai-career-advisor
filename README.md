@@ -30,7 +30,7 @@ Installation
 3. Set up API keys:
    Get a YouTube Data API key and replace API_KEY in videos.py with your key.
 
-   ![Replace with Your API Key](ai-project-ideas/images/API.png "API")
+   ![Replace with Your API Key](images/API.png)
 
 4. Download Llama 3 onto your device
    Install Ollama from [Ollama](https://ollama.com), then into your terminal enter: "ollama pull llama3.1"
