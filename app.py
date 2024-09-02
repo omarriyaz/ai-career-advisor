@@ -5,6 +5,13 @@ from videos import fetch_videos
 from transcript import get_transcript
 from llmresponse import generate_ideas
 
+# set page config
+st.set_page_config(
+    page_title="AI Project Idea Generator",
+    page_icon="🧠",
+    layout="wide",    
+)
+
 def main():
     st.markdown("<h1 style='text-align: center; color: black;'>AI Project Idea Generator</h1>", unsafe_allow_html=True)
     st.markdown("<h6 style='text-align: center; color: black;'>Get a project ideas and advice to break into the field of your choice!</h6>", unsafe_allow_html=True)
